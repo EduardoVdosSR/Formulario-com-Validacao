@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.site-formulario {
+    background-image: url(../images/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 100vh;
+}
+
+.site-formulario .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.site-formulario .container .dicas {
+    width: 300px;
+    height: 110px;
+}
+
+.container .dicas h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 23.44px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.container .dicas p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 17.58px;
+    color: #FFFFFF;
+}
+
+.site-formulario .container .formulario {
+    width: 340px;
+    height: 380px;
+    background-color: #fff;
+    padding: 20px 15px;
+}
+
+.container .formulario li {
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+.container .formulario li:nth-child(4) {
+    padding-bottom: 5px;
+}
+
+.container .formulario .informacao-campo {
+    padding-bottom: 20px;
+    padding-left: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 17.58px;
+}
+
+.container .formulario li:last-child {
+    padding-bottom: 0;
+}
+
+.container .formulario li input,
+.formulario li .botao-enviar {
+    width: 100%;
+    padding: 9px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.formulario li:nth-child(4) input {
+    padding-bottom: 75px;
+}
+
+.formulario li .botao-enviar {
+    background-color: #3CCC87;
+    color: #fff;
+    cursor: pointer;
+}
+
+.formulario .campo {
+    position: relative;
+}
+
+.formulario li .aviso {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 9.38px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Campo alterado */
+
+.formulario li.preenchido input {
+    border: 1px solid #00C22B;
+}
+
+.formulario li.campo-vazio {
+    color: #F52E2E;
+}
+
+.formulario li.campo-vazio input {
+    border: 1px solid #F52E2E;
+}
+
+.formulario li.campo-vazio .aviso {
+    display: block;
+}
+
+.formulario li.campo-vazio:nth-child(4) {
+    margin-bottom: 10px;
+}
+
+.formulario li.campo-vazio+li.informacao-campo {
+    padding-bottom: 11px;
+}

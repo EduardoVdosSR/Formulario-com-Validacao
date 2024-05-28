@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com validação</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <section class="site-formulario">
+        <main class="container">
+            <div class="dicas">
+                <h1>FICOU COM DÚVIDA? <br>
+                    NOS MANDE UMA MENSAGEM!</h1>
+                <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em
+                    contato
+                    em menos de
+                    24h.</p>
+            </div>
+            <ul class="formulario">
+                <li class="campo">
+                    <input type="text" placeholder="Nome completo *">
+                    <p class="aviso">
+                        campo obrigatório
+                    </p>
+                </li>
+                <li class="campo">
+                    <input type="email" placeholder="Email *">
+                    <p class="aviso">
+                        campo obrigatório
+                    </p>
+                </li>
+                <li class="campo">
+                    <input type="number" placeholder="Telefone *">
+                    <p class="aviso">
+                        campo obrigatório
+                    </p>
+                </li>
+                <li class="campo">
+                    <input type="text" placeholder="Mensagem *">
+                    <p class="aviso">
+                        campo obrigatório
+                    </p>
+                </li>
+                <li class="informacao-campo">
+                    <p>*campos obrigatórios</p>
+                </li>
+
+                <li>
+                    <button onclick="verificarFormularioCompleto()" class="botao-enviar">Enviar</button>
+                </li>
+            </ul>
+        </main>
+    </section>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
